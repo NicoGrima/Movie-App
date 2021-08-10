@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <title> Movie App </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <form id="feature">
+                <button
+                id="popular"
+                class="popular">Home</button>
+            </form>
+            <!--<img
+            src="logo.png"
+            class="logo"
+            alt="Sacoa logo"/>-->
+            <form id="finder">
+                <input type="text" 
+                id="search" 
+                placeholder="Search"
+                class="search"/>
+            </form>
+            <div id="sorter">
+                <button
+                id="sort"
+                class="sort"
+                onclick="showDrop()">Sort by:</button>
+                <div id="drop" class="dropdown">
+                    <button
+                    onclick="filterCurURL('popular')">Popular</button>
+                    <button
+                    onclick="filterCurURL('rating')">Rating</button>
+                    <button
+                    onclick="filterCurURL('release')">Release</button>
+                    <button
+                    onclick="filterCurURL('alphabetic')">Alphabetic</button>
+                  </div>
+                </div>
+        </header>
+        <main id="main"></main>
+    </body>   
+</html>
